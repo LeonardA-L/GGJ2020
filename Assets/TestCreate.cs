@@ -22,8 +22,6 @@ public class TestCreate : Singleton<TestCreate>
     public float m_rotSpeed = 1;
     public float m_currentRotSpeed = 0;
 
-    public List<TestObject> m_modules = null;
-
     public bool IsNavigating { get; set; } = false;
 
     public GameObject m_buildingInterface = null;
@@ -32,15 +30,22 @@ public class TestCreate : Singleton<TestCreate>
     private Quaternion m_baseRotation;
     private List<TapeData> m_allTapes = null;
 
+    private int m_currentId = 0;
+
+    private List<ModuleButton> m_allButtons = null;
+
     public void StartNavigating()
     {
         IsNavigating = true;
         m_buildingInterface.SetActive(false);
+
+        m_base.gameObject.SetActive(false);
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 
-    public void ResetGame()
+    public void ResetGame(bool clean)
     {
+        m_base.gameObject.SetActive(true);
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
         m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
@@ -48,11 +53,27 @@ public class TestCreate : Singleton<TestCreate>
         m_base.RigidBody.angularVelocity = 0;
         IsNavigating = false;
         m_buildingInterface.SetActive(true);
-        foreach (Transform child in m_base.transform)
+        if (clean)
         {
-            if(child.gameObject.tag == "Module")
+            var buttonsToRemove = new List<ModuleButton>(m_allButtons);
+            foreach (var item in buttonsToRemove)
             {
-                Destroy(child.gameObject);
+                Destroy(item.gameObject);
+            }
+            m_allButtons.Clear();
+
+            foreach (var item in m_allTapes)
+            {
+                Destroy(item.tape.gameObject);
+            }
+            m_allTapes.Clear();
+
+            foreach (Transform child in m_base.transform)
+            {
+                if (child.gameObject.tag == "Module")
+                {
+                    Destroy(child.gameObject);
+                }
             }
         }
     }
@@ -61,16 +82,18 @@ public class TestCreate : Singleton<TestCreate>
     void Awake()
     {
         I18n.Instance.Init();
-        m_modules = new List<TestObject>();
         m_allTapes = new List<TapeData>();
         m_basePosition = m_base.transform.position;
         m_baseRotation = m_base.transform.rotation;
-        ResetGame();
+        m_allButtons = new List<ModuleButton>();
+        ResetGame(true);
     }
 
     public void InstantiatePart(TestObject toInstantiate)
     {
         var instance = Instantiate(toInstantiate);
+        instance.ID = m_currentId;
+        m_currentId++;
         Select(instance, false);
     }
 
@@ -84,11 +107,11 @@ public class TestCreate : Singleton<TestCreate>
                 AddLink(m_instance.ActiveHotSpot, m_instance, m_instance.ActiveHotSpot.m_hitPoint);
                 m_instance.transform.SetParent(m_instance.ActiveHotSpot.transform);
                 m_instance.IsPlacing = false;
-                m_modules.Add(m_instance);
                 if(m_instance.m_button != null)
                 {
                     var buttonInstance = Instantiate(m_instance.m_button, m_moduleButtonsWrapper);
-                    buttonInstance.Init(m_instance);
+                    buttonInstance.Init(m_instance, m_instance.ID);
+                    m_allButtons.Add(buttonInstance);
                 }
             }
             else

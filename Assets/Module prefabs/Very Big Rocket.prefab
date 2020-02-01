@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5843002839409885419}
   m_Layer: 0
   m_Name: Very Big Rocket
-  m_TagString: Untagged
+  m_TagString: Module
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_descriptionKey: parts.veryBigRocket
   m_button: {fileID: 6555856326184104904, guid: 46e83360dd762c74483d58cc30ab165f,
     type: 3}
+  m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []
   m_flame: {fileID: 0}
   m_flameObj: {fileID: 2395733980856124906}

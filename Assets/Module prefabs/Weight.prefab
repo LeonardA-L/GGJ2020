@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8391633573250818829}
   m_Layer: 0
   m_Name: Weight
-  m_TagString: Untagged
+  m_TagString: Module
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,6 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.weight
   m_button: {fileID: 0}
+  m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []
   m_lerp: 0.1
 --- !u!61 &8648688196390779885
@@ -104,6 +105,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5268047461862152706}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 9c35ff75ef6e43b418bcf89deb7a7531,
+        type: 3}
+      propertyPath: m_Name
+      value: Enclume
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9c35ff75ef6e43b418bcf89deb7a7531,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9c35ff75ef6e43b418bcf89deb7a7531,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -174,16 +185,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.338859
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 9c35ff75ef6e43b418bcf89deb7a7531,
-        type: 3}
-      propertyPath: m_Name
-      value: Enclume
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 9c35ff75ef6e43b418bcf89deb7a7531,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c35ff75ef6e43b418bcf89deb7a7531, type: 3}
 --- !u!1 &7307313426354501952 stripped
@@ -215,11 +216,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 8391633573250818829}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -290,6 +286,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 8391633573250818829}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &5728676899958466539 stripped
