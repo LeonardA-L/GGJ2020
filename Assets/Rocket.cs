@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rocket : TestObject
 {
     public SpriteRenderer m_flame = null;
+    public GameObject m_flameObj = null;
     public float m_force = 1;
     public bool m_hasFuel = false;
     public float m_fuel = 45;
@@ -19,7 +20,14 @@ public class Rocket : TestObject
     protected override void Update()
     {
         base.Update();
-        m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1,1,1,0.8f) : new Color(0, 0, 0, 0));
+        if (m_flameObj != null)
+        {
+            m_flameObj.SetActive(Functionning || IsPlacing);
+        }
+        if (m_flame != null)
+        {
+            m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1, 1, 1, 0.8f) : new Color(0, 0, 0, 0));
+        }
 
         if (Functionning && m_hasFuel)
         {
