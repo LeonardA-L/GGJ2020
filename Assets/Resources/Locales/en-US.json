@@ -1,4 +1,8 @@
 {
-    "parts.motor":"<color=#113a82><b>Motor</b></color>\nIt goes vroom vroom and carries you away\n<b><color=#591182>Command:</color> ON/OFF</b>",
-    "parts.cube":"<color=#113a82><b>Weight</b></color>\nIt's a simple weight. Don't expect much\n<b><color=#591182>Command:</color> None</b>",
+    "parts.balloon":"<color=#113a82><b>Balloon</b></color>\nYour life is hanging by a single thread",
+    "parts.cockpit":"<color=#113a82><b>Cockpit</b></color>\nIt's the most safe cockpit you've found",
+    "parts.cubeLight":"<color=#113a82><b>Haystack</b></color>\nChill in a haystack",
+    "parts.bubbleMachine":"<color=#113a82><b>Bubble Machine</b></color>\nThere's nothing smoother than bubbles\n<b><color=#591182>Command:</color> ON/OFF, last for 45 seconds</b>",
+    "parts.veryBigRocket":"<color=#113a82><b>Very Big Rocket</b></color>\nWell, that's a big rocket\n<b><color=#591182>Command:</color> ON only, last for 5 seconds</b>",
+    "parts.weight":"<color=#113a82><b>Weight</b></color>\nIt's a simple weight. Don't expect much",
 }

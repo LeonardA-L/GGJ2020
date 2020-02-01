@@ -23,7 +23,7 @@ public class Rocket : TestObject
     {
         if (IsActive && TestCreate.Instance.IsNavigating)
         {
-            RigidBody.AddRelativeForce(new Vector2(0, -m_force));
+            RigidBody.AddRelativeForce(new Vector2(0, m_force));
         }
     }
 }

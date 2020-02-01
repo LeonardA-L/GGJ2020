@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4843131875352732696}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: -0.09, y: 1.112, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.04, y: -1.102, z: 0}
   m_LocalScale: {x: 1.1764706, y: 1.5, z: 1.1764705}
   m_Children: []
   m_Father: {fileID: 5268047461862152706}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8800538324217988098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,7 +108,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5268047461862152707}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.222, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
@@ -117,7 +117,7 @@ Transform:
   - {fileID: 1059611993829310777}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5268047461862152704
 Rigidbody2D:
   serializedVersion: 4
@@ -130,7 +130,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
+  m_Mass: 8
   m_LinearDrag: 1
   m_AngularDrag: 3
   m_GravityScale: 1
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a20121e7086c8cd4a86abf45f248861d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_descriptionKey: A very big rocket
+  m_descriptionKey: parts.veryBigRocket
   m_button: {fileID: 6555856326184104904, guid: 46e83360dd762c74483d58cc30ab165f,
     type: 3}
   m_activeColliders: []
