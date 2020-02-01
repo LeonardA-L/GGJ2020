@@ -13,6 +13,7 @@ public class TestObject : MonoBehaviour
     public Rigidbody2D RigidBody => m_rigidbody ?? (m_rigidbody = GetComponent<Rigidbody2D>());
     public string DescriptionKey => m_descriptionKey;
     public Vector3 m_hitPoint;
+    public int ID { get; set; } = 0;
 
     public bool IsPlacing
     {

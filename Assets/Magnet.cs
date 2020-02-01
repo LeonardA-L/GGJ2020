@@ -13,7 +13,7 @@ public class Magnet : TestObject
 
         for (var i = 0; i < hitColliders.Length; i++)
         {
-            Debug.Log(hitColliders[i].gameObject.name);
+            //Debug.Log(hitColliders[i].gameObject.name);
             var col = hitColliders[i].gameObject.GetComponent<TestCollider>();
             if (col != null)
             {

@@ -9,6 +9,7 @@ public class ModuleButton : MonoBehaviour
 {
     public TestObject m_module = null;
     public TextMeshProUGUI m_text = null;
+    public int ID { get; set; } = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,19 @@ public class ModuleButton : MonoBehaviour
         
     }
 
-    public void Init(TestObject module)
+    public void Init(TestObject module, int id)
     {
+        ID = id;
         m_module = module;
         GetComponent<Button>().onClick.AddListener(OnClick);
+        if (m_module.IsActive)
+        {
+            m_text.text = "On";
+        }
+        else
+        {
+            m_text.text = "Off";
+        }
     }
 
     private void OnClick()
