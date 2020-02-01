@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraController : Singleton<CameraController>
 {
     public Camera m_cam = null;
-    public Transform m_base = null;
     public float m_lerp = 0.1f;
 
     private Vector3 m_workshopPosition;
@@ -15,7 +14,7 @@ public class CameraController : Singleton<CameraController>
     void Awake()
     {
         m_workshopPosition = m_cam.transform.position;
-        m_baseDiff = m_base.transform.position - m_workshopPosition;
+        m_baseDiff = TestCreate.Instance.m_base.transform.position - m_workshopPosition;
         m_baseZ = m_cam.transform.position.z;
     }
 
@@ -24,7 +23,7 @@ public class CameraController : Singleton<CameraController>
     {
         if (TestCreate.Instance.IsNavigating)
         {
-            Vector3 lerped = Vector3.Lerp(m_cam.transform.position, m_base.position - m_baseDiff, m_lerp);
+            Vector3 lerped = Vector3.Lerp(m_cam.transform.position, TestCreate.Instance.m_base.transform.position - m_baseDiff, m_lerp);
             lerped.y = Mathf.Clamp(lerped.y, 0, 325f);
             lerped.x = Mathf.Max(-4, lerped.x);
             lerped.z = m_baseZ;

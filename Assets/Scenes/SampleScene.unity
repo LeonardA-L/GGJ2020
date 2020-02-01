@@ -4210,14 +4210,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1822436578}
         m_MethodName: ResetGame
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -7331,7 +7331,6 @@ MonoBehaviour:
   m_moduleButtonsWrapper: {fileID: 1647742102}
   m_tapePref: {fileID: 990107260965335923, guid: 735e17df2549d8d469a192d868f8bd66,
     type: 3}
-  m_tapeWrapper: {fileID: 2030818113}
   m_base: {fileID: 1394307275}
   m_rotSpeed: 70
   m_currentRotSpeed: 0
