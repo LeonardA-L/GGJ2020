@@ -7,7 +7,7 @@ public class TestCreate : Singleton<TestCreate>
 {
     public Transform m_moduleButtonsWrapper = null;
 
-    public Rigidbody2D m_base = null;
+    public TestObject m_base = null;
     private TestObject m_instance = null;
 
     public float m_rotSpeed = 1;
@@ -25,14 +25,19 @@ public class TestCreate : Singleton<TestCreate>
     public void StartNavigating()
     {
         IsNavigating = true;
-        m_base.bodyType = RigidbodyType2D.Dynamic;
         m_buildingInterface.SetActive(false);
+        m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 
-    public void Reset()
+    public void ResetGame()
     {
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
+        m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
+        m_base.RigidBody.velocity = Vector2.zero;
+        m_base.RigidBody.angularVelocity = 0;
+        IsNavigating = false;
+        m_buildingInterface.SetActive(true);
         foreach (Transform child in m_base.transform)
         {
             if(child.gameObject.tag == "Module")
@@ -49,6 +54,7 @@ public class TestCreate : Singleton<TestCreate>
         m_modules = new List<TestObject>();
         m_basePosition = m_base.transform.position;
         m_baseRotation = m_base.transform.rotation;
+        ResetGame();
     }
 
     public void InstantiatePart(TestObject toInstantiate)
