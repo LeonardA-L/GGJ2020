@@ -10,16 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
-  m_Name: Level_01
+  m_Name: Level_10
   m_EditorClassIdentifier: 
   m_libraryContent:
   - m_itemPrefab: {fileID: 440156758538678109, guid: acca4cc820d28d047a2c02be7470ffc9,
       type: 3}
-    m_amount: 3
-  - m_itemPrefab: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
-      type: 3}
     m_amount: 2
-  - m_itemPrefab: {fileID: 8391633573250818829, guid: 3d3f73e5d38260045aa45d3361fd5c01,
+  - m_itemPrefab: {fileID: 5843002839409885419, guid: b8256465808e977489d7bb000d253ba4,
       type: 3}
-    m_amount: 3
-  m_distanceToWin: 50
+    m_amount: 1
+  m_distanceToWin: 80

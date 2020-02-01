@@ -187,8 +187,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -226,11 +224,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -285,6 +278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2 (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
@@ -489,8 +487,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: fe4a504f00da04b4692c9e6dc5a4f3b7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1065,8 +1061,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1232,8 +1226,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 8d7f467924dc4bd40ac669f5369cfdf7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1467,8 +1459,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 51dfd05d2e28b8e4787d1b1a1e9606c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1646,11 +1636,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (2)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 5843002839409885419, guid: b8256465808e977489d7bb000d253ba4,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1756,17 +1752,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 5843002839409885419, guid: b8256465808e977489d7bb000d253ba4,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &400902407 stripped
@@ -2337,11 +2327,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (8)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 2793321462122437556, guid: 9df3e7bdaf2676e4cb78f708ccb501cb,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2447,17 +2443,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 2793321462122437556, guid: 9df3e7bdaf2676e4cb78f708ccb501cb,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (8)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &502050761 stripped
@@ -2855,11 +2845,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973336033}
     m_Modifications:
-    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
-        type: 3}
-      propertyPath: m_Name
-      value: nuage-2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3999691259885887479, guid: f1d52a561d25b7a40a72c64fd0c0848d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2914,6 +2899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
+        type: 3}
+      propertyPath: m_Name
+      value: nuage-2 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d52a561d25b7a40a72c64fd0c0848d, type: 3}
@@ -2985,11 +2975,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3045,6 +3030,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2 (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
 --- !u!1001 &696060535
@@ -3054,11 +3044,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (1)
-      objectReference: {fileID: 0}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 1079128395646403172, guid: 8b51f7857c14d1e408e8ad654daf53bf,
+        type: 3}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3164,17 +3160,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 1079128395646403172, guid: 8b51f7857c14d1e408e8ad654daf53bf,
-        type: 3}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
+      propertyPath: m_Name
+      value: LibraryPart (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &696060536 stripped
@@ -3465,11 +3455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3525,6 +3510,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
 --- !u!1 &839297904 stripped
@@ -3546,11 +3536,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3606,6 +3591,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2 (2)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
 --- !u!1 &849756825 stripped
@@ -3627,11 +3617,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973336033}
     m_Modifications:
-    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
-        type: 3}
-      propertyPath: m_Name
-      value: nuage-2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 3999691259885887479, guid: f1d52a561d25b7a40a72c64fd0c0848d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3686,6 +3671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
+        type: 3}
+      propertyPath: m_Name
+      value: nuage-2 (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d52a561d25b7a40a72c64fd0c0848d, type: 3}
@@ -3756,8 +3746,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 7ec0d0776770e274798bfe6871e929a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -4316,8 +4304,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &1033962061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4336,8 +4322,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: cc1533a5fc821114da090f6a9c986146, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -4395,8 +4379,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -4423,8 +4405,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1081707426
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,8 +4774,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 56ff17425a7f33c4e9e4c87cd0156a20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -5048,11 +5026,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (4)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 440156758538678109, guid: acca4cc820d28d047a2c02be7470ffc9,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5158,17 +5142,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 440156758538678109, guid: acca4cc820d28d047a2c02be7470ffc9,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (4)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1184600604 stripped
@@ -5345,11 +5323,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (9)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 6093816401546850338, guid: ea27568e3e0d0ec4da5b281800bee719,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5455,17 +5439,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 6093816401546850338, guid: ea27568e3e0d0ec4da5b281800bee719,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (9)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1234551227 stripped
@@ -5481,11 +5459,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973336033}
     m_Modifications:
-    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
-        type: 3}
-      propertyPath: m_Name
-      value: nuage-2 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 3999691259885887479, guid: f1d52a561d25b7a40a72c64fd0c0848d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5540,6 +5513,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
+        type: 3}
+      propertyPath: m_Name
+      value: nuage-2 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d52a561d25b7a40a72c64fd0c0848d, type: 3}
@@ -6573,8 +6551,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: '<color=#113a82><b>Motor</b></color>
 
     It goes vroom vroom and carries you away
@@ -6990,11 +6966,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (3)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 6093816401546850338, guid: ed5581b7ef457f34aa23ff660bb3f931,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7100,17 +7082,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 6093816401546850338, guid: ed5581b7ef457f34aa23ff660bb3f931,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1717447919 stripped
@@ -7126,11 +7102,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (11)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 6093816401546850338, guid: 2889010be261aec4d8ee78c525c00419,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7236,17 +7218,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 6093816401546850338, guid: 2889010be261aec4d8ee78c525c00419,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (11)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1723343097 stripped
@@ -7488,7 +7464,7 @@ MonoBehaviour:
   m_moduleButtonsWrapper: {fileID: 1647742102}
   m_tapePref: {fileID: 990107260965335923, guid: 735e17df2549d8d469a192d868f8bd66,
     type: 3}
-  m_currentLevel: {fileID: 11400000, guid: 68b54981a6c91d548b0df96a1e611d84, type: 2}
+  m_currentLevel: {fileID: 11400000, guid: 3498f054c64ed0047821dcd1be0acf90, type: 2}
   m_base: {fileID: 1394307275}
   m_rotSpeed: 70
   m_currentRotSpeed: 0
@@ -7514,11 +7490,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (5)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 6093816401546850338, guid: e06cb95a6c4d7284889ee1472c0cd97b,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7624,17 +7606,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 6093816401546850338, guid: e06cb95a6c4d7284889ee1472c0cd97b,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (5)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1841150788 stripped
@@ -7811,10 +7787,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5268047461862152707, guid: 559a423fd20f0bd4895128f36c58d1c3,
+    - target: {fileID: 5268047461862152704, guid: 559a423fd20f0bd4895128f36c58d1c3,
         type: 3}
-      propertyPath: m_Name
-      value: Cube Base
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5268047461862152706, guid: 559a423fd20f0bd4895128f36c58d1c3,
         type: 3}
@@ -7871,10 +7847,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5268047461862152704, guid: 559a423fd20f0bd4895128f36c58d1c3,
+    - target: {fileID: 5268047461862152707, guid: 559a423fd20f0bd4895128f36c58d1c3,
         type: 3}
-      propertyPath: m_BodyType
-      value: 1
+      propertyPath: m_Name
+      value: Cube Base
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 559a423fd20f0bd4895128f36c58d1c3, type: 3}
@@ -7885,11 +7861,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7945,6 +7916,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2 (3)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
 --- !u!1 &1927593268 stripped
@@ -7966,11 +7942,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 209977949}
     m_Modifications:
-    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
-        type: 3}
-      propertyPath: m_Name
-      value: Arbre2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 8523074935913640408, guid: f90604e6d674add4b9606b2d660c425a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8025,6 +7996,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523074935913640415, guid: f90604e6d674add4b9606b2d660c425a,
+        type: 3}
+      propertyPath: m_Name
+      value: Arbre2 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f90604e6d674add4b9606b2d660c425a, type: 3}
@@ -8095,8 +8071,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f5cf4fc55de31ed4490c07c144dd1b2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8170,8 +8144,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f75f787013e59414f934e956ab947058, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8245,8 +8217,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: f75f787013e59414f934e956ab947058, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8353,11 +8323,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (6)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 5520117914963091028, guid: 48731239f2ffdb14781c5c245e5e1d47,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8463,17 +8439,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 5520117914963091028, guid: 48731239f2ffdb14781c5c245e5e1d47,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (6)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1988863849 stripped
@@ -8578,8 +8548,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null
 --- !u!114 &2004428018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8598,8 +8566,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: cc1533a5fc821114da090f6a9c986146, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -8646,8 +8612,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   - eventID: 1
     callback:
       m_PersistentCalls:
@@ -8663,8 +8627,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
-        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1001 &2022161353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8672,11 +8634,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (7)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 8391633573250818829, guid: 3d3f73e5d38260045aa45d3361fd5c01,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8782,17 +8750,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 8391633573250818829, guid: 3d3f73e5d38260045aa45d3361fd5c01,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (7)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &2022161354 stripped
@@ -9091,8 +9053,6 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: 67bfa3feaf6feb040af5feccb62b9662, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -9199,11 +9159,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart (10)
-      objectReference: {fileID: 0}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 6093816401546850338, guid: 8ff4b47b76d311248af1a75383e25a1b,
+        type: 3}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9309,17 +9275,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 6093816401546850338, guid: 8ff4b47b76d311248af1a75383e25a1b,
-        type: 3}
+      propertyPath: m_Name
+      value: LibraryPart (10)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &2094737272 stripped
@@ -9820,11 +9780,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973336033}
     m_Modifications:
-    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
-        type: 3}
-      propertyPath: m_Name
-      value: nuage-2
-      objectReference: {fileID: 0}
     - target: {fileID: 3999691259885887479, guid: f1d52a561d25b7a40a72c64fd0c0848d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9880,6 +9835,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6185386774982849878, guid: f1d52a561d25b7a40a72c64fd0c0848d,
+        type: 3}
+      propertyPath: m_Name
+      value: nuage-2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1d52a561d25b7a40a72c64fd0c0848d, type: 3}
 --- !u!1 &7434058394351831370 stripped
@@ -9901,11 +9861,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 369800665}
     m_Modifications:
-    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_Name
-      value: LibraryPart
-      objectReference: {fileID: 0}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
+        type: 3}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_descriptionText
+      value: 
+      objectReference: {fileID: 1569892548}
     - target: {fileID: 4400996067371041922, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10011,17 +9977,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+    - target: {fileID: 8665680620292104208, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}
-      propertyPath: m_part
-      value: 
-      objectReference: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
-        type: 3}
-    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
-        type: 3}
-      propertyPath: m_descriptionText
-      value: 
-      objectReference: {fileID: 1569892548}
+      propertyPath: m_Name
+      value: LibraryPart
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &8405868144604540012 stripped
