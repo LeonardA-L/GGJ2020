@@ -1672,7 +1672,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_part
       value: 
-      objectReference: {fileID: 8686681988697673588, guid: 147d087887785b144b62a01e02e9e686,
+      objectReference: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
         type: 3}
     - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
         type: 3}

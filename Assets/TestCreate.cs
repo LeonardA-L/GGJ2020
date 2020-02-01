@@ -136,7 +136,7 @@ public class TestCreate : Singleton<TestCreate>
         if (m_instance != null)
         {
             m_instance.RigidBody.MovePosition(GetMousePosition());
-            m_instance.RigidBody.MoveRotation(m_instance.RigidBody.rotation + m_currentRotSpeed * Time.fixedDeltaTime);
+            m_instance.RigidBody.MoveRotation(m_instance.RigidBody.rotation - m_currentRotSpeed * Time.fixedDeltaTime);
         }
     }
 
