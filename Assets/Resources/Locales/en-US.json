@@ -5,4 +5,5 @@
     "parts.bubbleMachine":"<color=#113a82><b>Bubble Machine</b></color>\nThere's nothing smoother than bubbles\n<b><color=#591182>Command:</color> ON/OFF, last for 45 seconds</b>",
     "parts.veryBigRocket":"<color=#113a82><b>Very Big Rocket</b></color>\nWell, that's a big rocket\n<b><color=#591182>Command:</color> ON only, last for 5 seconds</b>",
     "parts.weight":"<color=#113a82><b>Weight</b></color>\nIt's a simple weight. Don't expect much",
+    "parts.alternateRocket":"<color=#113a82><b>Alternate Rocket</b></color>\nSo inconsistent",
 }
