@@ -33,9 +33,11 @@ public class ModuleButton : MonoBehaviour
         m_module.IsActive = !m_module.IsActive;
         if (m_module.IsActive)
         {
+            m_module.OnActivate();
             m_text.text = "On";
         } else
         {
+            m_module.OnDeactivate();
             m_text.text = "Off";
         }
     }

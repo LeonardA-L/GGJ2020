@@ -27,6 +27,14 @@ public class TestObject : MonoBehaviour
 
     public TestObject ActiveHotSpot => m_activeColliders.Count == 0 ? null : m_activeColliders[m_activeColliders.Count - 1];
 
+    public virtual void OnActivate()
+    {
+    }
+
+    public virtual void OnDeactivate()
+    {
+    }
+
     // Start is called before the first frame update
     protected virtual void Awake()
     {
