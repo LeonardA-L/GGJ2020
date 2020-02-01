@@ -22,7 +22,7 @@ public class TestCollider : MonoBehaviour
         if (collision.gameObject.tag == "Hotspot")
         {
             m_activeColliders.Add(collision);
-            m_parent.TriggerEnter(collision.GetComponent<TestCollider>().Parent);
+            m_parent.TriggerEnter(collision.GetComponent<TestCollider>().Parent, transform.position);
         }
     }
 
