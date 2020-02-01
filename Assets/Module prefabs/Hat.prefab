@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b9e2056135aa43818641ace396187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_descriptionKey: parts.cockpit
+  m_descriptionKey: parts.hat
   m_button: {fileID: 0}
   m_activeColliders: []
 --- !u!61 &7323804469319170945

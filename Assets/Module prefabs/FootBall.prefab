@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6093816401546850338}
   - component: {fileID: 1327609046327536752}
   m_Layer: 0
-  m_Name: FootBall_TODO
+  m_Name: FootBall
   m_TagString: Module
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b9e2056135aa43818641ace396187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_descriptionKey: parts.cockpit
+  m_descriptionKey: parts.footBall
   m_button: {fileID: 0}
   m_activeColliders: []
 --- !u!58 &1327609046327536752
