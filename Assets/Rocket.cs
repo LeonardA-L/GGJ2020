@@ -6,6 +6,9 @@ public class Rocket : TestObject
 {
     public SpriteRenderer m_flame = null;
     public float m_force = 1;
+    public bool m_hasFuel = false;
+    public float m_fuel = 45;
+    private bool Depleted { get; set; } = false;
 
     protected override void Awake()
     {
@@ -16,12 +19,23 @@ public class Rocket : TestObject
     protected override void Update()
     {
         base.Update();
-        m_flame.color = (IsActive && TestCreate.Instance.IsNavigating) ? Color.white : (IsPlacing ? new Color(1,1,1,0.8f) : new Color(0, 0, 0, 0));
+        m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1,1,1,0.8f) : new Color(0, 0, 0, 0));
+
+        if (Functionning)
+        {
+            m_fuel -= Time.deltaTime;
+            if(m_fuel <= 0)
+            {
+                Depleted = true;
+            }
+        }
     }
+
+    public bool Functionning => (IsActive && TestCreate.Instance.IsNavigating && !Depleted);
 
     protected override void FixedUpdate()
     {
-        if (IsActive && TestCreate.Instance.IsNavigating)
+        if (Functionning)
         {
             RigidBody.AddRelativeForce(new Vector2(0, m_force));
         }
