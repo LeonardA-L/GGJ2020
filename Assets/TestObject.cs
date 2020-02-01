@@ -8,6 +8,8 @@ public class TestObject : MonoBehaviour
 {
     [SerializeField]
     private string m_descriptionKey = null;
+    [SerializeField]
+    public TestObject m_prefab = null;
     public ModuleButton m_button = null;
     private Rigidbody2D m_rigidbody = null;
     public Rigidbody2D RigidBody => m_rigidbody ?? (m_rigidbody = GetComponent<Rigidbody2D>());

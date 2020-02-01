@@ -16,6 +16,12 @@ public class TestCreate : Singleton<TestCreate>
 
     public GameObject m_tapePref = null;
 
+    public Level m_currentLevel = null;
+    public void SetLevel(Level newLevel)
+    {
+        m_currentLevel = newLevel;
+    }
+
     public TestObject m_base = null;
     private TestObject m_instance = null;
 
@@ -73,6 +79,8 @@ public class TestCreate : Singleton<TestCreate>
                     Destroy(child.gameObject);
                 }
             }
+
+            LibraryController.Instance.InitLevel(m_currentLevel);
         }
     }
 
@@ -114,6 +122,7 @@ public class TestCreate : Singleton<TestCreate>
             }
             else
             {
+                LibraryController.Instance.Release(m_instance.m_prefab);
                 Destroy(m_instance.gameObject);
             }
             m_instance = null;
