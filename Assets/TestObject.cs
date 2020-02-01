@@ -12,6 +12,7 @@ public class TestObject : MonoBehaviour
     private Rigidbody2D m_rigidbody = null;
     public Rigidbody2D RigidBody => m_rigidbody ?? (m_rigidbody = GetComponent<Rigidbody2D>());
     public string DescriptionKey => m_descriptionKey;
+    public Vector3 m_hitPoint;
 
     public bool IsPlacing
     {
@@ -52,10 +53,11 @@ public class TestObject : MonoBehaviour
         return typeof(FixedJoint2D);
     }
 
-    public void TriggerEnter(TestObject other)
+    public void TriggerEnter(TestObject other, Vector3 hitPoint)
     {
         if (other != this && !m_activeColliders.Contains(other))
         {
+            m_hitPoint = hitPoint;
             m_activeColliders.Add(other);
         }
     }
