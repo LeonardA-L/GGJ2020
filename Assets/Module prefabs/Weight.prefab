@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.weight
-  m_prefab: {fileID: 8391633573250818829}
+  m_name: Weight
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []

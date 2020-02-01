@@ -122,7 +122,7 @@ public class TestCreate : Singleton<TestCreate>
             }
             else
             {
-                LibraryController.Instance.Release(m_instance.m_prefab);
+                LibraryController.Instance.Release(m_instance.m_name);
                 Destroy(m_instance.gameObject);
             }
             m_instance = null;

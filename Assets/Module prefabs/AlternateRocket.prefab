@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.alternateRocket
-  m_prefab: {fileID: 1079128395646403172}
+  m_name: AlternateRocket
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []

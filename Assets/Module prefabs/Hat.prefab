@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.hat
-  m_prefab: {fileID: 6093816401546850338}
+  m_name: Hat
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []

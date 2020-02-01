@@ -49,11 +49,11 @@ public class LibraryController : Singleton<LibraryController>
         }
     }
 
-    internal void Release(TestObject m_prefab)
+    internal void Release(string name)
     {
         for (int i = 0; i < m_allParts.Count; i++)
         {
-            if(m_allParts[i].m_part != null && m_allParts[i].m_part == m_prefab)
+            if(m_allParts[i].m_part != null && m_allParts[i].m_part.m_name == name)
             {
                 m_allParts[i].Amount++;
             }
