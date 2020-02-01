@@ -70,7 +70,7 @@ public class TestCreate : Singleton<TestCreate>
         {
             if(m_instance.ActiveHotSpot != null)
             {
-                AddLink(m_instance.ActiveHotSpot.RigidBody, m_instance.RigidBody);
+                AddLink(m_instance.ActiveHotSpot, m_instance);
                 m_instance.transform.SetParent(m_instance.ActiveHotSpot.transform);
                 m_instance.IsPlacing = false;
                 m_modules.Add(m_instance);
@@ -147,15 +147,16 @@ public class TestCreate : Singleton<TestCreate>
         return mouse;
     }
 
-    private void AddLink(Rigidbody2D m_first, Rigidbody2D m_second)
+    private void AddLink(TestObject m_first, TestObject m_second)
     {
         var firstJoint = m_first.gameObject.AddComponent<FixedJoint2D>();
-        var secondJoint = m_second.gameObject.AddComponent<FixedJoint2D>();
+        var secondJoint = (Joint2D)m_second.gameObject.AddComponent(m_second.GetJointType());
 
-        firstJoint.connectedBody = m_second;
+        firstJoint.connectedBody = m_second.RigidBody;
         firstJoint.autoConfigureConnectedAnchor = true;
+        firstJoint.enabled = false;
 
-        secondJoint.connectedBody = m_first;
-        secondJoint.autoConfigureConnectedAnchor = true;
+        secondJoint.connectedBody = m_first.RigidBody;
+        //secondJoint.autoConfigureConnectedAnchor = true;
     }
 }

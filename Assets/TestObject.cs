@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -38,6 +39,10 @@ public class TestObject : MonoBehaviour
         
     }
     protected virtual void FixedUpdate() { }
+    public virtual Type GetJointType()
+    {
+        return typeof(FixedJoint2D);
+    }
 
     public void TriggerEnter(TestObject other)
     {

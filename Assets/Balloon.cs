@@ -1,10 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Balloon : TestObject
 {
     public float m_force = 1;
+
+    public Rigidbody2D _balloonBody = null;
 
     protected override void Awake()
     {
@@ -19,9 +22,11 @@ public class Balloon : TestObject
 
     protected override void FixedUpdate()
     {
-        if (TestCreate.Instance.IsNavigating)
-        {
-            RigidBody.AddForce(m_force * Vector3.up);
-        }
+        _balloonBody.AddForce(m_force * Vector3.up);
+    }
+
+    public override Type GetJointType()
+    {
+        return typeof(HingeJoint2D);
     }
 }
