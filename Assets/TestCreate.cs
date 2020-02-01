@@ -17,10 +17,24 @@ public class TestCreate : Singleton<TestCreate>
 
     public bool IsNavigating { get; set; } = false;
 
+    public GameObject m_buildingInterface = null;
+
     public void StartNavigating()
     {
         IsNavigating = true;
         m_base.bodyType = RigidbodyType2D.Dynamic;
+        m_buildingInterface.SetActive(false);
+    }
+
+    public void Reset()
+    {
+        foreach (Transform child in m_base.transform)
+        {
+            if(child.gameObject.tag != "Hotspot")
+            {
+                Destroy(child.gameObject);
+            }
+        }
     }
 
     // Start is called before the first frame update
@@ -44,7 +58,6 @@ public class TestCreate : Singleton<TestCreate>
         {
             if(m_instance.ActiveHotSpot != null)
             {
-                Debug.Log($"{m_instance.name} -- {m_instance.ActiveHotSpot.name}");
                 AddLink(m_instance.ActiveHotSpot.RigidBody, m_instance.RigidBody);
                 m_instance.transform.SetParent(m_instance.ActiveHotSpot.transform);
                 m_instance.IsPlacing = false;

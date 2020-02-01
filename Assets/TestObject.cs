@@ -54,7 +54,6 @@ public class TestObject : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("Clicked");
         TestCreate.Instance.Select(this, true);
     }
 
