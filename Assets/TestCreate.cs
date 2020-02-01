@@ -39,13 +39,11 @@ public class TestCreate : Singleton<TestCreate>
         IsNavigating = true;
         m_buildingInterface.SetActive(false);
 
-        m_base.gameObject.SetActive(false);
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void ResetGame(bool clean)
     {
-        m_base.gameObject.SetActive(true);
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
         m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
