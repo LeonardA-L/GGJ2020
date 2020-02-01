@@ -79,7 +79,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.teddyBear
+  m_prefab: {fileID: 6093816401546850338}
   m_button: {fileID: 0}
+  m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []
 --- !u!58 &3273470964078910835
 CircleCollider2D:
@@ -219,11 +221,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -294,6 +291,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &9124034644508533855 stripped
@@ -314,11 +316,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -389,6 +386,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &5692702995268803512 stripped
@@ -409,11 +411,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -484,6 +481,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &4641609385718403040 stripped
@@ -594,11 +596,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -669,6 +666,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &4610176639278024750 stripped
@@ -689,11 +691,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -764,6 +761,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &849852147499875463 stripped
@@ -784,11 +786,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 6093816401546850338}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -859,6 +856,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 6093816401546850338}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &1258929549204250684 stripped

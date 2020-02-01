@@ -168,6 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.magnet
+  m_prefab: {fileID: 2793321462122437556}
   m_button: {fileID: 6555856326184104904, guid: 46e83360dd762c74483d58cc30ab165f,
     type: 3}
   m_hitPoint: {x: 0, y: 0, z: 0}

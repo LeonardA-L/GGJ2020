@@ -53,7 +53,7 @@ public class LibraryController : Singleton<LibraryController>
     {
         for (int i = 0; i < m_allParts.Count; i++)
         {
-            if(m_allParts[i].m_part == m_prefab)
+            if(m_allParts[i].m_part != null && m_allParts[i].m_part == m_prefab)
             {
                 m_allParts[i].Amount++;
             }

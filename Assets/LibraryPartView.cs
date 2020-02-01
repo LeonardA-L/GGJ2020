@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class LibraryPartView : MonoBehaviour
 {
     public TestObject m_part = null;
     public Button m_button = null;
+    public TextMeshProUGUI m_amountText = null;
     private int m_amount = 0;
     public int Amount
     {
@@ -17,6 +19,7 @@ public class LibraryPartView : MonoBehaviour
         set
         {
             m_amount = value;
+            m_amountText.text = $"{m_amount}";
             m_button.interactable |= m_amount > 0;
         }
     }
@@ -40,13 +43,16 @@ public class LibraryPartView : MonoBehaviour
             m_part = null;
             m_amount = 0;
             m_button.interactable = false;
+            m_amountText.gameObject.SetActive(false);
             return;
         }
 
+        m_amountText.gameObject.SetActive(true);
         m_button.interactable = true;
 
         m_part = part.ItemPrefab;
         m_amount = part.Amount;
+        m_amountText.text = $"{m_amount}";
 
         trigger = m_button.gameObject.AddComponent<EventTrigger>();
 
@@ -83,8 +89,14 @@ public class LibraryPartView : MonoBehaviour
 
     private void OnClick(BaseEventData arg0)
     {
+        if(m_amount <= 0)
+        {
+            return;
+        }
+
         m_amount--;
         m_button.interactable &= m_amount > 0;
+        m_amountText.text = $"{m_amount}";
         LibraryController.Instance.OnClick(m_part);
     }
 
