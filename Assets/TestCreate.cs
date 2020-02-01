@@ -19,6 +19,9 @@ public class TestCreate : Singleton<TestCreate>
 
     public GameObject m_buildingInterface = null;
 
+    private Vector3 m_basePosition;
+    private Quaternion m_baseRotation;
+
     public void StartNavigating()
     {
         IsNavigating = true;
@@ -30,7 +33,7 @@ public class TestCreate : Singleton<TestCreate>
     {
         foreach (Transform child in m_base.transform)
         {
-            if(child.gameObject.tag != "Hotspot")
+            if(child.gameObject.tag == "Module")
             {
                 Destroy(child.gameObject);
             }
@@ -42,6 +45,8 @@ public class TestCreate : Singleton<TestCreate>
     {
         I18n.Instance.Init();
         m_modules = new List<TestObject>();
+        m_basePosition = m_base.transform.position;
+        m_baseRotation = m_base.transform.rotation;
     }
 
     public void InstantiatePart(TestObject toInstantiate)
