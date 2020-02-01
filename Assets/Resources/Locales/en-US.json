@@ -6,4 +6,6 @@
     "parts.veryBigRocket":"<color=#113a82><b>Very Big Rocket</b></color>\nWell, that's a big rocket\n<b><color=#591182>Command:</color> ON only, last for 5 seconds</b>",
     "parts.weight":"<color=#113a82><b>Weight</b></color>\nIt's a simple weight. Don't expect much",
     "parts.alternateRocket":"<color=#113a82><b>Alternate Rocket</b></color>\nSo inconsistent",
+    "parts.magnet":"<color=#113a82><b>Magnet</b></color>\nblablabla\n<b><color=#591182>Command:</color> ON to drop modules attached to it</b>",
+    "parts.umbrella":"<color=#113a82><b>Umbrella</b></color>\nblablabla\n<b><color=#591182>Command:</color> ON/OFF</b>",
 }

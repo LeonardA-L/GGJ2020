@@ -206,7 +206,7 @@ MonoBehaviour:
   m_flameWrapper: {fileID: 7340787061131884726}
   m_force: 60
   m_hasFuel: 0
-  m_fuel: 45
+  m_fuel: 0
 --- !u!1 &7715504659293773200
 GameObject:
   m_ObjectHideFlags: 0
