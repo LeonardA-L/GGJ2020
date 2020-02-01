@@ -7,7 +7,7 @@ public class TestCreate : Singleton<TestCreate>
 {
     public Transform m_moduleButtonsWrapper = null;
 
-    public Rigidbody2D m_base = null;
+    public TestObject m_base = null;
     private TestObject m_instance = null;
 
     public float m_rotSpeed = 1;
@@ -19,18 +19,28 @@ public class TestCreate : Singleton<TestCreate>
 
     public GameObject m_buildingInterface = null;
 
+    private Vector3 m_basePosition;
+    private Quaternion m_baseRotation;
+
     public void StartNavigating()
     {
         IsNavigating = true;
-        m_base.bodyType = RigidbodyType2D.Dynamic;
         m_buildingInterface.SetActive(false);
+        m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 
-    public void Reset()
+    public void ResetGame()
     {
+        m_base.transform.position = m_basePosition;
+        m_base.transform.rotation = m_baseRotation;
+        m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
+        m_base.RigidBody.velocity = Vector2.zero;
+        m_base.RigidBody.angularVelocity = 0;
+        IsNavigating = false;
+        m_buildingInterface.SetActive(true);
         foreach (Transform child in m_base.transform)
         {
-            if(child.gameObject.tag != "Hotspot")
+            if(child.gameObject.tag == "Module")
             {
                 Destroy(child.gameObject);
             }
@@ -42,6 +52,9 @@ public class TestCreate : Singleton<TestCreate>
     {
         I18n.Instance.Init();
         m_modules = new List<TestObject>();
+        m_basePosition = m_base.transform.position;
+        m_baseRotation = m_base.transform.rotation;
+        ResetGame();
     }
 
     public void InstantiatePart(TestObject toInstantiate)
@@ -53,7 +66,6 @@ public class TestCreate : Singleton<TestCreate>
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetButtonUp("Fire1") && m_instance != null)
         {
             if(m_instance.ActiveHotSpot != null)
