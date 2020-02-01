@@ -31,6 +31,8 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Reset()
     {
+        m_base.transform.position = m_basePosition;
+        m_base.transform.rotation = m_baseRotation;
         foreach (Transform child in m_base.transform)
         {
             if(child.gameObject.tag == "Module")
@@ -58,7 +60,6 @@ public class TestCreate : Singleton<TestCreate>
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetButtonUp("Fire1") && m_instance != null)
         {
             if(m_instance.ActiveHotSpot != null)
