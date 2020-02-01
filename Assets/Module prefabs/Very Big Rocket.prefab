@@ -50,8 +50,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 4
-  m_LinearDrag: 1
-  m_AngularDrag: 1
+  m_LinearDrag: 2
+  m_AngularDrag: 10
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 5843002839409885419}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -218,11 +223,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 5843002839409885419}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &8992782596518644185 stripped
@@ -243,6 +243,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 5843002839409885419}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,11 +318,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 5843002839409885419}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &6281880848817640095 stripped
@@ -333,11 +333,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6215782622974485730}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: b858d1d0a3bbe014ba19f6ca79685e6e,
-        type: 3}
-      propertyPath: m_Name
-      value: Propulseur
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b858d1d0a3bbe014ba19f6ca79685e6e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,6 +403,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.8199694
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b858d1d0a3bbe014ba19f6ca79685e6e,
+        type: 3}
+      propertyPath: m_Name
+      value: Propulseur
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b858d1d0a3bbe014ba19f6ca79685e6e, type: 3}
 --- !u!4 &1472705583678829103 stripped
@@ -423,11 +423,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5268047461862152706}
     m_Modifications:
-    - target: {fileID: 5134251231236260663, guid: d517f8b39283afc46b932f326a85f098,
-        type: 3}
-      propertyPath: m_Name
-      value: FireFX
-      objectReference: {fileID: 0}
     - target: {fileID: 5134251231236260661, guid: d517f8b39283afc46b932f326a85f098,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -482,6 +477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134251231236260663, guid: d517f8b39283afc46b932f326a85f098,
+        type: 3}
+      propertyPath: m_Name
+      value: FireFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d517f8b39283afc46b932f326a85f098, type: 3}
