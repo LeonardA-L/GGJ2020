@@ -25,7 +25,7 @@ public class CameraController : Singleton<CameraController>
         if (TestCreate.Instance.IsNavigating)
         {
             Vector3 lerped = Vector3.Lerp(m_cam.transform.position, m_base.position - m_baseDiff, m_lerp);
-            lerped.y = Mathf.Max(0, lerped.y);
+            lerped.y = Mathf.Clamp(lerped.y, 0, 406.5f);
             lerped.x = Mathf.Max(-4, lerped.x);
             lerped.z = m_baseZ;
             m_cam.transform.position = lerped;

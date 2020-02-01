@@ -477,8 +477,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160883255}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 100}
-  m_LocalScale: {x: 0.93586, y: 0.93586, z: 0.93586}
+  m_LocalPosition: {x: 0, y: 10.165, z: 100}
+  m_LocalScale: {x: 2.80758, y: 2.80758, z: 2.80758}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -495,9 +495,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15070fd12974d204bb49f778897e7985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 25.85
-  _parallax: 0.9
-  _lastCameraPosition: 0
+  _width: 77.55
+  _parallaxX: 0.9
+  _lastCameraPositionX: 0
+  _parallaxY: 0.95
+  _lastCameraPositionY: 0
 --- !u!1 &369800664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,8 +1020,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _width: 17.97
-  _parallax: 0
-  _lastCameraPosition: 0
+  _parallaxX: 0
+  _lastCameraPositionX: 0
+  _parallaxY: 0
+  _lastCameraPositionY: 0
 --- !u!1 &422757424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,9 +1446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15070fd12974d204bb49f778897e7985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 25.85
-  _parallax: 0.9
-  _lastCameraPosition: 0
+  _width: 77.55
+  _parallaxX: 0.9
+  _lastCameraPositionX: 0
+  _parallaxY: 0.95
+  _lastCameraPositionY: 0
 --- !u!212 &599485028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1502,8 +1508,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599485026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.855, y: 0, z: 100}
-  m_LocalScale: {x: 0.93586, y: 0.93586, z: 0.93586}
+  m_LocalPosition: {x: 77.572, y: 10.165, z: 100}
+  m_LocalScale: {x: 2.80758, y: 2.80758, z: 2.80758}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
@@ -2434,6 +2440,12 @@ PrefabInstance:
       propertyPath: m_descriptionText
       value: 
       objectReference: {fileID: 1569892548}
+    - target: {fileID: 1369831466603424623, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7,
+        type: 3}
+      propertyPath: m_part
+      value: 
+      objectReference: {fileID: 8686681988697673588, guid: b8256465808e977489d7bb000d253ba4,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7968d2d801ad7b4a9acd7ac0ebfffa7, type: 3}
 --- !u!224 &1184600604 stripped
@@ -2604,8 +2616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _width: 17.97
-  _parallax: 0
-  _lastCameraPosition: 0
+  _parallaxX: 0
+  _lastCameraPositionX: 0
+  _parallaxY: 0
+  _lastCameraPositionY: 0
 --- !u!60 &1321664995
 PolygonCollider2D:
   m_ObjectHideFlags: 0
