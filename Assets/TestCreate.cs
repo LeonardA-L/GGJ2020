@@ -80,6 +80,11 @@ public class TestCreate : Singleton<TestCreate>
 
     internal void Select(TestObject testObject, bool uncollide)
     {
+        if (IsNavigating)
+        {
+            return;
+        }
+
         if(m_instance != null)
         {
             return;
