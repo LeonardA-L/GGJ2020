@@ -10,6 +10,8 @@ public class TestCollider : MonoBehaviour
     private List<Collider2D> m_activeColliders = null;
     public Collider2D ActiveCollider => m_activeColliders.Count == 0 ? null : m_activeColliders[m_activeColliders.Count - 1];
 
+    public Collider2D m_collider = null;
+
     private void Awake()
     {
         m_activeColliders = new List<Collider2D>();

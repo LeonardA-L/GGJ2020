@@ -159,4 +159,24 @@ public class TestCreate : Singleton<TestCreate>
         secondJoint.connectedBody = m_first.RigidBody;
         //secondJoint.autoConfigureConnectedAnchor = true;
     }
+
+    public void RemoveLink(TestObject objA, TestObject objB)
+    {
+        var jointsA = objA.GetComponents<Joint2D>();
+        foreach (var joint in jointsA)
+        {
+            if (joint.connectedBody == objB.RigidBody)
+            {
+                Destroy(joint);
+            }
+        }
+        var jointsB = objB.GetComponents<Joint2D>();
+        foreach (var joint in jointsB)
+        {
+            if (joint.connectedBody == objA.RigidBody)
+            {
+                Destroy(joint);
+            }
+        }
+    }
 }
