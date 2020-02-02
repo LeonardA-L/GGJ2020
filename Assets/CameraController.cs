@@ -15,11 +15,12 @@ public class CameraController : Singleton<CameraController>
     {
         m_workshopPosition = m_cam.transform.position;
         m_baseDiff = TestCreate.Instance.m_base.transform.position - m_workshopPosition;
+        m_baseDiff.x = 0;
         m_baseZ = m_cam.transform.position.z;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (TestCreate.Instance.IsNavigating)
         {

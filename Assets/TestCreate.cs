@@ -61,10 +61,12 @@ public class TestCreate : Singleton<TestCreate>
         m_buildingInterface.SetActive(false);
 
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
+        TestCollider.s_show = false;
     }
 
     public void ResetGame(bool clean)
     {
+        TestCollider.s_show = true;
         GameOver = false;
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
@@ -311,6 +313,10 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Lose(string reasonKey)
     {
+        if(GameOver == true)
+        {
+            return;
+        }
         GameOver = true;
         m_gameOverScreen.SetActive(true);
         m_gameOverReasonText.SetText(reasonKey);
@@ -320,6 +326,10 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Win()
     {
+        if (GameOver == true)
+        {
+            return;
+        }
         GameOver = true;
         m_gameOverScreen.SetActive(false);
         m_winScreen.SetActive(true);

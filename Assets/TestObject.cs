@@ -18,6 +18,16 @@ public class TestObject : MonoBehaviour
     public int ID { get; set; } = 0;
     public ModuleButton Button { get; set; } = null;
 
+    public Renderer m_highlighter = null;
+
+    public void SetHighlight(bool val)
+    {
+        if (m_highlighter != null)
+        {
+            m_highlighter.material.color = val ? new Color(1f, 133f/255f, 0f, 1f) : new Color(1f, 133f / 255f, 0f, 0f);
+        }
+    }
+
     public bool IsPlacing
     {
         get; set;
@@ -52,6 +62,7 @@ public class TestObject : MonoBehaviour
     protected virtual void Awake()
     {
         m_activeColliders = new List<TestObject>();
+        SetHighlight(false);
     }
 
     // Update is called once per frame
