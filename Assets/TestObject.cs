@@ -8,6 +8,8 @@ public class TestObject : MonoBehaviour
 {
     [SerializeField]
     private string m_descriptionKey = null;
+    [SerializeField]
+    public string m_name = null;
     public ModuleButton m_button = null;
     private Rigidbody2D m_rigidbody = null;
     public Rigidbody2D RigidBody => m_rigidbody ?? (m_rigidbody = GetComponent<Rigidbody2D>());
@@ -35,6 +37,14 @@ public class TestObject : MonoBehaviour
 
     public virtual void OnDeactivate()
     {
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.gameObject.tag == "Ground")
+        {
+            TestCreate.Instance.Lose("lose.crash");
+        }
     }
 
     // Start is called before the first frame update

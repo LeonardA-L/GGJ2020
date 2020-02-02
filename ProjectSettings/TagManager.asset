@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hotspot
   - Module
+  - Ground
   layers:
   - Default
   - TransparentFX

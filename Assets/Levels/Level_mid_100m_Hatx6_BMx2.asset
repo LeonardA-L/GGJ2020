@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
+  m_Name: Level_mid_100m_Hatx6_BMx2
+  m_EditorClassIdentifier: 
+  m_libraryContent:
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: 8ff4b47b76d311248af1a75383e25a1b,
+      type: 3}
+    m_amount: 6
+  - m_itemPrefab: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
+      type: 3}
+    m_amount: 2
+  m_distanceToWin: 100

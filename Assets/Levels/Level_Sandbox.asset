@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
+  m_Name: Level_Sandbox
+  m_EditorClassIdentifier: 
+  m_libraryContent:
+  - m_itemPrefab: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 1079128395646403172, guid: 8b51f7857c14d1e408e8ad654daf53bf,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 5843002839409885419, guid: b8256465808e977489d7bb000d253ba4,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 440156758538678109, guid: acca4cc820d28d047a2c02be7470ffc9,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: ed5581b7ef457f34aa23ff660bb3f931,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: e06cb95a6c4d7284889ee1472c0cd97b,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 5520117914963091028, guid: 48731239f2ffdb14781c5c245e5e1d47,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 8391633573250818829, guid: 3d3f73e5d38260045aa45d3361fd5c01,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 2793321462122437556, guid: 9df3e7bdaf2676e4cb78f708ccb501cb,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: ea27568e3e0d0ec4da5b281800bee719,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: 8ff4b47b76d311248af1a75383e25a1b,
+      type: 3}
+    m_amount: 99
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: 2889010be261aec4d8ee78c525c00419,
+      type: 3}
+    m_amount: 99
+  m_distanceToWin: 200

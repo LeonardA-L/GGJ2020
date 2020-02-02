@@ -14,7 +14,23 @@ public class TestCreate : Singleton<TestCreate>
 
     public Transform m_moduleButtonsWrapper = null;
 
+    public CanvasGroup m_mainMenu = null;
+    public GameObject m_winScreen = null;
+    public GameObject m_gameOverScreen = null;
+    public GameObject m_tryAgain = null;
+    public GameObject m_nextLevel = null;
+
+    public LocalizedText m_gameOverReasonText = null;
+
+
     public GameObject m_tapePref = null;
+
+    public Level m_currentLevel = null;
+    public List<Level> m_allLevels = null;
+    public void SetLevel(Level newLevel)
+    {
+        m_currentLevel = newLevel;
+    }
 
     public TestObject m_base = null;
     private TestObject m_instance = null;
@@ -23,6 +39,7 @@ public class TestCreate : Singleton<TestCreate>
     public float m_currentRotSpeed = 0;
 
     public bool IsNavigating { get; set; } = false;
+    public bool GameOver { get; set; } = false;
 
     public GameObject m_buildingInterface = null;
 
@@ -34,18 +51,19 @@ public class TestCreate : Singleton<TestCreate>
 
     private List<ModuleButton> m_allButtons = null;
 
+    public float Distance => (m_base.transform.position - m_basePosition).x;
+
     public void StartNavigating()
     {
         IsNavigating = true;
         m_buildingInterface.SetActive(false);
 
-        m_base.gameObject.SetActive(false);
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void ResetGame(bool clean)
     {
-        m_base.gameObject.SetActive(true);
+        GameOver = false;
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
         m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
@@ -75,6 +93,8 @@ public class TestCreate : Singleton<TestCreate>
                     Destroy(child.gameObject);
                 }
             }
+
+            LibraryController.Instance.InitLevel(m_currentLevel);
         }
     }
 
@@ -116,12 +136,26 @@ public class TestCreate : Singleton<TestCreate>
             }
             else
             {
+                LibraryController.Instance.Release(m_instance.m_name);
                 Destroy(m_instance.gameObject);
             }
             m_instance = null;
         }
 
         m_currentRotSpeed = (Input.GetButton("Fire2") && m_instance != null) ? m_rotSpeed : 0;
+
+        if(!GameOver && m_base.transform.position.x < -4)
+        {
+            Lose("lose.tooLeft");
+        }
+        if (!GameOver && m_base.transform.position.y > 320)
+        {
+            Lose("lose.tooHigh");
+        }
+        if(!GameOver && Distance > m_currentLevel.DistanceGoal)
+        {
+            Win();
+        }
     }
 
     internal void Select(TestObject testObject, bool uncollide)
@@ -266,5 +300,52 @@ public class TestCreate : Singleton<TestCreate>
         {
             m_allTapes.Remove(item);
         }
+    }
+
+    public void Lose(string reasonKey)
+    {
+        GameOver = true;
+        m_gameOverScreen.SetActive(true);
+        m_gameOverReasonText.SetText(reasonKey);
+        m_winScreen.SetActive(false);
+        m_mainMenu.gameObject.SetActive(false);
+    }
+
+    public void Win()
+    {
+        GameOver = true;
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(true);
+        int idx = m_allLevels.IndexOf(m_currentLevel);
+        m_nextLevel.SetActive(idx < m_allLevels.Count - 1);
+        m_tryAgain.SetActive(idx >= m_allLevels.Count - 1);
+        m_mainMenu.gameObject.SetActive(false);
+    }
+
+    public void GotoMainMenu()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        m_mainMenu.gameObject.SetActive(true);
+        m_mainMenu.alpha = 1;
+        MainMenuController.Instance.IsInit = false;
+    }
+
+    public void TryAgain()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        ResetGame(true);
+    }
+
+    public void NextLevel()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        int idx = m_allLevels.IndexOf(m_currentLevel);
+        idx++;
+        idx = Mathf.Min(idx, m_allLevels.Count);
+        m_currentLevel = m_allLevels[idx];
+        ResetGame(true);
     }
 }
