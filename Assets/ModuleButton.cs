@@ -61,6 +61,7 @@ public class ModuleButton : MonoBehaviour
     {
         ID = id;
         m_module = module;
+        m_module.Button = this;
 
         if (m_gaugeFill != null)
         {

@@ -139,6 +139,11 @@ public class TestCreate : Singleton<TestCreate>
             else
             {
                 LibraryController.Instance.Release(m_instance.m_name);
+                if (m_instance.Button != null)
+                {
+                    m_allButtons.Add(m_instance.Button);
+                    Destroy(m_instance.Button.gameObject);
+                }
                 Destroy(m_instance.gameObject);
             }
             m_instance = null;
