@@ -10,13 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
-  m_Name: Level_easy_TODO 6
+  m_Name: Level_easy_200m_FBx6_Bx2_Ux2_BMx3
   m_EditorClassIdentifier: 
   m_libraryContent:
-  - m_itemPrefab: {fileID: 6093816401546850338, guid: ea27568e3e0d0ec4da5b281800bee719,
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: e06cb95a6c4d7284889ee1472c0cd97b,
+      type: 3}
+    m_amount: 6
+  - m_itemPrefab: {fileID: 440156758538678109, guid: acca4cc820d28d047a2c02be7470ffc9,
+      type: 3}
+    m_amount: 2
+  - m_itemPrefab: {fileID: 5520117914963091028, guid: 48731239f2ffdb14781c5c245e5e1d47,
       type: 3}
     m_amount: 2
   - m_itemPrefab: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
       type: 3}
-    m_amount: 5
+    m_amount: 3
   m_distanceToWin: 100
