@@ -20,3 +20,4 @@ MonoBehaviour:
       type: 3}
     m_amount: 1
   m_distanceToWin: 80
+  m_forceUseAll: 1

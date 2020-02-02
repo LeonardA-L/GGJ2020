@@ -24,4 +24,6 @@ public class Level : ScriptableObject
     public float DistanceGoal => m_distanceToWin;
 
     public List<Entry> Library => m_libraryContent;
+
+    public bool m_forceUseAll = false;
 }
