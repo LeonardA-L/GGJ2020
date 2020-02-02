@@ -61,10 +61,12 @@ public class TestCreate : Singleton<TestCreate>
         m_buildingInterface.SetActive(false);
 
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
+        TestCollider.s_show = false;
     }
 
     public void ResetGame(bool clean)
     {
+        TestCollider.s_show = true;
         GameOver = false;
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
