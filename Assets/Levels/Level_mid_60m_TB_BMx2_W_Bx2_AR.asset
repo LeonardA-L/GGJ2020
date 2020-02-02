@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
-  m_Name: Level_mid_TB_BMx2_W_Bx2_AR
+  m_Name: Level_mid_60m_TB_BMx2_W_Bx2_AR
   m_EditorClassIdentifier: 
   m_libraryContent:
   - m_itemPrefab: {fileID: 6093816401546850338, guid: ea27568e3e0d0ec4da5b281800bee719,

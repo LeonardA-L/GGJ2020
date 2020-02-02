@@ -75,6 +75,8 @@ MonoBehaviour:
   m_name: Pillow
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
+  ModuleIcon: {fileID: 21300000, guid: 58da8b4f473fd634c8fece38b045d0c0, type: 3}
+  m_highlighter: {fileID: 0}
   m_activeColliders: []
 --- !u!61 &3972326598785065104
 BoxCollider2D:
