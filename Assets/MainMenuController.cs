@@ -14,23 +14,25 @@ public class MainMenuController : Singleton<MainMenuController>
 
     public CanvasGroup m_canvas = null;
     public Level m_firstLevel = null;
-    public TextMeshProUGUI m_pressAnyKey = null;
-
+    public Level m_freeGame = null;
+    public TextMeshProUGUI m_credits = null;
+    private float m_creditsGoal = 0;
     void Awake()
     {
-        TestCreate.Instance.m_currentLevel = m_firstLevel;
     }
 
     void Update()
     {
-        if (!IsInit && Input.anyKeyDown)
+        /*if (!IsInit && Input.anyKeyDown)
         {
             StartCoroutine(Go());
         }
 
         Color col = m_pressAnyKey.color;
         col.a = Mathf.Abs(Mathf.Sin(Time.time));
-        m_pressAnyKey.color = col;
+        m_pressAnyKey.color = col;*/
+
+        m_credits.color = Color.Lerp(m_credits.color, new Color(1, 1, 1, m_creditsGoal), 0.1f);
     }
 
     private IEnumerator Go()
@@ -46,5 +48,31 @@ public class MainMenuController : Singleton<MainMenuController>
             yield return null;
         }
         m_canvas.gameObject.SetActive(false);
+    }
+
+    public void Free()
+    {
+        TestCreate.Instance.m_currentLevel = m_freeGame;
+        StartCoroutine(Go());
+    }
+
+    public void Begin()
+    {
+        TestCreate.Instance.m_currentLevel = m_firstLevel;
+        StartCoroutine(Go());
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
+    public void ShowCredits()
+    {
+        m_creditsGoal = 1;
+    }
+    public void HideCredits()
+    {
+        m_creditsGoal = 0;
     }
 }

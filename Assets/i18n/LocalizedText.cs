@@ -17,6 +17,7 @@ public class LocalizedText : MonoBehaviour
         Debug.Assert(m_text != null);
         I18n.Instance.OnLocaleChange += UpdateUI;
         Debug.Assert(!string.IsNullOrEmpty(m_key), "No key provided", this);
+        UpdateUI();
     }
 
     private void UpdateUI()

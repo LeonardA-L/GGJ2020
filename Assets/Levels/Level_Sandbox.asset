@@ -49,4 +49,4 @@ MonoBehaviour:
   - m_itemPrefab: {fileID: 6093816401546850338, guid: 2889010be261aec4d8ee78c525c00419,
       type: 3}
     m_amount: 99
-  m_distanceToWin: 200
+  m_distanceToWin: 999999

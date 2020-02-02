@@ -23,9 +23,15 @@
     "lose.crash":"Gather your parts and try again! Not enough duct tape perhaps?",
 
     "stats.distance":"Distance Traveled:",
+    "stats.goalDistance":"Goal Distance:",
     "stats.altitude":"Altitude:",
     "stats.peakAltitude":"Peak Altitude:",
     "stats.speed":"Speed:",
     "stats.topSpeed":"Top Speed:",
     "stats.weight": "Weight:",
+
+    "menu.begin":"Begin Adventure",
+    "menu.allLevels":"Freestyle Game",
+    "menu.credits":"Who made this?",
+    "menu.exit":"Exit",
 }

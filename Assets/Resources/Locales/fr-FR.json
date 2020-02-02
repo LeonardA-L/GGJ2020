@@ -17,4 +17,9 @@
     "stats.speed":"Speed:",
     "stats.topSpeed":"Top Speed:",
     "stats.weight": "Weight:",
+
+    "menu.begin":"Begin Adventure",
+    "menu.allLevels":"Freestyle Game",
+    "menu.credits":"Who made this?",
+    "menu.exit":"Exit",
 }

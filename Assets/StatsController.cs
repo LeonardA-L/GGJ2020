@@ -11,6 +11,7 @@ public class StatsController : MonoBehaviour
     public TextMeshProUGUI m_topAltitudeText = null;
     public TextMeshProUGUI m_speedText = null;
     public TextMeshProUGUI m_topSpeedText = null;
+    public TextMeshProUGUI m_goalDistanceText = null;
 
     public TestObject m_base = null;
 
@@ -37,5 +38,6 @@ public class StatsController : MonoBehaviour
         m_topAltitudeText.text = $"{m_topAltitude.ToString("####0.00")}m";
         m_speedText.text = $"{speed.ToString("####0.00")}mps";
         m_topSpeedText.text = $"{m_topSpeed.ToString("####0.00")}mps";
+        m_goalDistanceText.text = $"{TestCreate.Instance.m_currentLevel.DistanceGoal.ToString("####0.00")}m";
     }
 }
