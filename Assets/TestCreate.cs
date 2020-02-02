@@ -40,6 +40,7 @@ public class TestCreate : Singleton<TestCreate>
 
     public bool IsNavigating { get; set; } = false;
     public bool GameOver { get; set; } = false;
+    public float NavigatingStartTime { get; set; } = 0;
 
     public GameObject m_buildingInterface = null;
 
@@ -55,6 +56,7 @@ public class TestCreate : Singleton<TestCreate>
 
     public void StartNavigating()
     {
+        NavigatingStartTime = Time.time;
         IsNavigating = true;
         m_buildingInterface.SetActive(false);
 

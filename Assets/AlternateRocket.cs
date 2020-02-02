@@ -20,6 +20,11 @@ public class AlternateRocket : TestObject
         base.Awake();
     }
 
+    protected float Timer()
+    {
+        return Time.time - TestCreate.Instance.NavigatingStartTime;
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -30,7 +35,7 @@ public class AlternateRocket : TestObject
         if (m_flame != null)
         {
             m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1, 1, 1, 0.8f) : new Color(0, 0, 0, 0));
-            m_flameWrapper.transform.localScale = (Time.time % (boostDuration + betweenBoostDuration) <= boostDuration) ? 1f * new Vector3(1, 1, 1) : Vector3.zero;
+            m_flameWrapper.transform.localScale = (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration) ? 1f * new Vector3(1, 1, 1) : Vector3.zero;
         }
 
         if (Functionning && m_hasFuel)
@@ -47,9 +52,9 @@ public class AlternateRocket : TestObject
 
     protected override void FixedUpdate()
     {
-        if (Functionning && (Time.time % (boostDuration + betweenBoostDuration) <= boostDuration))
+        if (Functionning && (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
         {
-            RigidBody.AddRelativeForce(new Vector2(0, m_force * (Mathf.Sin(Time.time) + 1) / 2f));
+            RigidBody.AddRelativeForce(new Vector2(0, m_force));
         }
     }
 }
