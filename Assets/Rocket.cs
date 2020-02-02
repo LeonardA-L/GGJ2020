@@ -10,12 +10,14 @@ public class Rocket : TestObject
     public float m_force = 1;
     public bool m_hasFuel = false;
     public float m_fuel = 45;
+    private float m_fuelMax = 45;
+    public float FuelRatio => m_fuel / m_fuelMax;
     private bool Depleted { get; set; } = false;
 
     protected override void Awake()
     {
         base.Awake();
-
+        m_fuelMax = m_fuel;
     }
 
     protected override void Update()

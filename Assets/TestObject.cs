@@ -16,6 +16,7 @@ public class TestObject : MonoBehaviour
     public string DescriptionKey => m_descriptionKey;
     public Vector3 m_hitPoint;
     public int ID { get; set; } = 0;
+    public ModuleButton Button { get; set; } = null;
 
     public bool IsPlacing
     {
