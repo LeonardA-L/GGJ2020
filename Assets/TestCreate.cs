@@ -43,6 +43,7 @@ public class TestCreate : Singleton<TestCreate>
     public float NavigatingStartTime { get; set; } = 0;
 
     public GameObject m_buildingInterface = null;
+    public GameObject m_navigationInterface = null;
 
     private Vector3 m_basePosition;
     private Quaternion m_baseRotation;
@@ -59,6 +60,7 @@ public class TestCreate : Singleton<TestCreate>
         NavigatingStartTime = Time.time;
         IsNavigating = true;
         m_buildingInterface.SetActive(false);
+        m_navigationInterface.SetActive(true);
 
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
         TestCollider.s_show = false;
@@ -75,6 +77,7 @@ public class TestCreate : Singleton<TestCreate>
         m_base.RigidBody.angularVelocity = 0;
         IsNavigating = false;
         m_buildingInterface.SetActive(true);
+        m_navigationInterface.SetActive(false);
         if (clean)
         {
             var buttonsToRemove = new List<ModuleButton>(m_allButtons);
