@@ -21,4 +21,11 @@
     "lose.tooHigh":"You can't go to space in a makeshift ship!",
     "lose.tooLeft":"Salvation is not this way! Trust us, we checked.",
     "lose.crash":"Gather your parts and try again! Not enough duct tape perhaps?",
+
+    "stats.distance":"Distance Traveled:",
+    "stats.altitude":"Altitude:",
+    "stats.peakAltitude":"Peak Altitude:",
+    "stats.speed":"Speed:",
+    "stats.topSpeed":"Top Speed:",
+    "stats.weight": "Weight:",
 }
