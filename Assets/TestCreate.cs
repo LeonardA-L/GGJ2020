@@ -313,6 +313,10 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Lose(string reasonKey)
     {
+        if(GameOver == true)
+        {
+            return;
+        }
         GameOver = true;
         m_gameOverScreen.SetActive(true);
         m_gameOverReasonText.SetText(reasonKey);
@@ -322,6 +326,10 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Win()
     {
+        if (GameOver == true)
+        {
+            return;
+        }
         GameOver = true;
         m_gameOverScreen.SetActive(false);
         m_winScreen.SetActive(true);
