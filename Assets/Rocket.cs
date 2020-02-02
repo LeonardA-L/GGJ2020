@@ -37,7 +37,7 @@ public class Rocket : TestObject
             }
             if (!Functionning && m_flamePart.isPlaying)
             {
-                m_flamePart.Pause();
+                m_flamePart.Stop();
             }
         }
 
