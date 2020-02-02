@@ -39,6 +39,7 @@ public class TestCreate : Singleton<TestCreate>
     public float m_currentRotSpeed = 0;
 
     public bool IsNavigating { get; set; } = false;
+    public bool GameOver { get; set; } = false;
 
     public GameObject m_buildingInterface = null;
 
@@ -50,6 +51,8 @@ public class TestCreate : Singleton<TestCreate>
 
     private List<ModuleButton> m_allButtons = null;
 
+    public float Distance => (m_base.transform.position - m_basePosition).x;
+
     public void StartNavigating()
     {
         IsNavigating = true;
@@ -60,6 +63,7 @@ public class TestCreate : Singleton<TestCreate>
 
     public void ResetGame(bool clean)
     {
+        GameOver = false;
         m_base.transform.position = m_basePosition;
         m_base.transform.rotation = m_baseRotation;
         m_base.RigidBody.bodyType = RigidbodyType2D.Kinematic;
@@ -140,13 +144,17 @@ public class TestCreate : Singleton<TestCreate>
 
         m_currentRotSpeed = (Input.GetButton("Fire2") && m_instance != null) ? m_rotSpeed : 0;
 
-        if(m_base.transform.position.x < -4)
+        if(!GameOver && m_base.transform.position.x < -4)
         {
             Lose("lose.tooLeft");
         }
-        if (m_base.transform.position.y > 320)
+        if (!GameOver && m_base.transform.position.y > 320)
         {
             Lose("lose.tooHigh");
+        }
+        if(!GameOver && Distance > m_currentLevel.DistanceGoal)
+        {
+            Win();
         }
     }
 
@@ -296,6 +304,7 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Lose(string reasonKey)
     {
+        GameOver = true;
         m_gameOverScreen.SetActive(true);
         m_gameOverReasonText.SetText(reasonKey);
         m_winScreen.SetActive(false);
@@ -304,6 +313,7 @@ public class TestCreate : Singleton<TestCreate>
 
     public void Win()
     {
+        GameOver = true;
         m_gameOverScreen.SetActive(false);
         m_winScreen.SetActive(true);
         int idx = m_allLevels.IndexOf(m_currentLevel);
