@@ -34,4 +34,6 @@
     "menu.allLevels":"Freestyle Game",
     "menu.credits":"Who made this?",
     "menu.exit":"Exit",
+
+    "forceUseAll": "Must use all items!",
 }

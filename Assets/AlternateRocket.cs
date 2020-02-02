@@ -43,10 +43,12 @@ public class AlternateRocket : TestObject
             if (Functionning && !m_flamePart.isPlaying && (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
             {
                 m_flamePart.Play();
+                AudioManager.Instance.PlaySound("GlouglouFX");
             }
             if (!Functionning && m_flamePart.isPlaying || !(Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
             {
                 m_flamePart.Stop();
+                AudioManager.Instance.PlaySound("GlouglouFX");
             }
         }
 
@@ -58,6 +60,12 @@ public class AlternateRocket : TestObject
                 Depleted = true;
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+
+            AudioManager.Instance.StopSound("GlouglouFX");
     }
 
     public bool Functionning => (TestCreate.Instance.IsNavigating && !Depleted);

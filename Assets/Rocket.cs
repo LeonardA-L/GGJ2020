@@ -13,11 +13,22 @@ public class Rocket : TestObject
     private float m_fuelMax = 45;
     public float FuelRatio => m_fuel / m_fuelMax;
     private bool Depleted { get; set; } = false;
+    public string m_sound = null;
+    private bool m_firstFrame = false;
 
     protected override void Awake()
     {
         base.Awake();
         m_fuelMax = m_fuel;
+        m_firstFrame = false;
+    }
+
+    private void OnDestroy()
+    {
+        if (!string.IsNullOrEmpty(m_sound))
+        {
+            AudioManager.Instance.StopSound(m_sound);
+        }
     }
 
     protected override void Update()
@@ -49,6 +60,20 @@ public class Rocket : TestObject
             if(m_fuel <= 0)
             {
                 Depleted = true;
+            }
+        }
+
+        if (!string.IsNullOrEmpty(m_sound))
+        {
+            if (Functionning && !m_firstFrame)
+            {
+                m_firstFrame = true;
+                AudioManager.Instance.PlaySound(m_sound);
+            }
+            if (!Functionning && m_firstFrame)
+            {
+                m_firstFrame = false;
+                AudioManager.Instance.StopSound(m_sound);
             }
         }
     }

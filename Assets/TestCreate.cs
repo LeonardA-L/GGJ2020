@@ -49,6 +49,9 @@ public class TestCreate : Singleton<TestCreate>
     private Quaternion m_baseRotation;
     private List<TapeData> m_allTapes = null;
 
+    public GameObject m_goButton = null;
+    public GameObject m_forceUse = null;
+
     private int m_currentId = 0;
 
     private List<ModuleButton> m_allButtons = null;
@@ -64,6 +67,8 @@ public class TestCreate : Singleton<TestCreate>
 
         m_base.RigidBody.bodyType = RigidbodyType2D.Dynamic;
         TestCollider.s_show = false;
+            AudioManager.Instance.StopSound("Music1");
+            AudioManager.Instance.PlaySound("Music2");
     }
 
     public void ResetGame(bool clean)
@@ -152,6 +157,17 @@ public class TestCreate : Singleton<TestCreate>
                 Destroy(m_instance.gameObject);
             }
             m_instance = null;
+        }
+
+        if (m_currentLevel.m_forceUseAll)
+        {
+            bool allAssetsUsed = LibraryController.Instance.IsDepleted();
+            m_goButton.SetActive(allAssetsUsed);
+            m_forceUse.SetActive(!allAssetsUsed);
+        } else
+        {
+            m_goButton.SetActive(true);
+            m_forceUse.SetActive(false);
         }
 
         m_currentRotSpeed = (Input.GetButton("Fire2") && m_instance != null) ? m_rotSpeed : 0;
@@ -320,6 +336,8 @@ public class TestCreate : Singleton<TestCreate>
         {
             return;
         }
+        AudioManager.Instance.PlaySound("Music1");
+        AudioManager.Instance.StopSound("Music2");
         GameOver = true;
         m_gameOverScreen.SetActive(true);
         m_gameOverReasonText.SetText(reasonKey);
@@ -333,6 +351,8 @@ public class TestCreate : Singleton<TestCreate>
         {
             return;
         }
+        AudioManager.Instance.PlaySound("Music1");
+        AudioManager.Instance.StopSound("Music2");
         GameOver = true;
         m_gameOverScreen.SetActive(false);
         m_winScreen.SetActive(true);

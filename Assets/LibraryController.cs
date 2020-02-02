@@ -9,6 +9,16 @@ public class LibraryController : Singleton<LibraryController>
 
     public List<LibraryPartView> m_allParts = null;
 
+    public bool IsDepleted ()
+    {
+        bool res = true;
+        foreach (var item in m_allParts)
+        {
+            res &= item.Amount == 0;
+        }
+        return res;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
