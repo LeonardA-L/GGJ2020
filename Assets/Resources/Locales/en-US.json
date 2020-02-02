@@ -1,5 +1,5 @@
 {
-    "parts.alternateRocket":"<color=#113a82><b>Green Bubble Engine</b></color>\nThat's probably because of this you've crashed your ship.",
+    "parts.alternateRocket":"<color=#113a82><b>Green Bubble Engine</b></color>\nIt's probably the reason why you crashed your ship.",
     "parts.balloon":"<color=#113a82><b>Balloon</b></color>\nYour life is hanging by a single thread.",
     "parts.bubbleMachine":"<color=#113a82><b>Bubble Machine</b></color>\nThere's nothing smoother than bubbles.",
     "parts.cockpit":"<color=#113a82><b>Cockpit</b></color>\nIt's the safest cockpit you've found.",
@@ -36,4 +36,9 @@
     "menu.exit":"Exit",
 
     "forceUseAll": "Must use all items!",
+
+    "tuto.library":"Grab items from the library on the left to start repairing your ship!\nItems latch onto each other using the red anchor points",
+    "tuto.reset":"You can press Reset at any time to start fresh.",
+    "tuto.butons":"Some items have special commands which will be displayed down here.\nYou can preset these commands before the flight.",
+    "tuto.play":"Don't wait to launch your new ship on an expedition!",	
 }
