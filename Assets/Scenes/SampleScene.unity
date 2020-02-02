@@ -8718,8 +8718,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.87, y: 0.14}
-  m_AnchoredPosition: {x: 362.1999, y: 0.00024414062}
-  m_SizeDelta: {x: -589.0999, y: -0.03567505}
+  m_AnchoredPosition: {x: 355, y: 112.46509}
+  m_SizeDelta: {x: -548, y: 210.93001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647742103
 MonoBehaviour:
@@ -8730,7 +8730,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647742101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
@@ -8738,14 +8738,13 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
+  m_ChildAlignment: 7
+  m_StartCorner: 2
+  m_StartAxis: 0
+  m_CellSize: {x: 112, y: 112}
+  m_Spacing: {x: 0, y: 0}
+  m_Constraint: 0
+  m_ConstraintCount: 2
 --- !u!1 &1670486002
 GameObject:
   m_ObjectHideFlags: 0

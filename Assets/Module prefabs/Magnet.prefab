@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.magnet
   m_name: Magnet
-  m_button: {fileID: 6555856326184104904, guid: 46e83360dd762c74483d58cc30ab165f,
+  m_button: {fileID: 6555856326184104904, guid: d4f6b3633d3c59140bd571e9845f936d,
     type: 3}
   m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []
