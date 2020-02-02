@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc26d7fca5a2c74988c14354f83827f, type: 3}
+  m_Name: Level_easy_TODO 2
+  m_EditorClassIdentifier: 
+  m_libraryContent:
+  - m_itemPrefab: {fileID: 6093816401546850338, guid: ed5581b7ef457f34aa23ff660bb3f931,
+      type: 3}
+    m_amount: 2
+  - m_itemPrefab: {fileID: 5520117914963091028, guid: 48731239f2ffdb14781c5c245e5e1d47,
+      type: 3}
+    m_amount: 5
+  - m_itemPrefab: {fileID: 1079128395646403172, guid: 8b51f7857c14d1e408e8ad654daf53bf,
+      type: 3}
+    m_amount: 5
+  - m_itemPrefab: {fileID: 3617412618532067491, guid: 147d087887785b144b62a01e02e9e686,
+      type: 3}
+    m_amount: 5
+  - m_itemPrefab: {fileID: 5843002839409885419, guid: b8256465808e977489d7bb000d253ba4,
+      type: 3}
+    m_amount: 5
+  m_distanceToWin: 100

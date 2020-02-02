@@ -6,6 +6,7 @@ public class AlternateRocket : TestObject
 {
     public SpriteRenderer m_flame = null;
     public GameObject m_flameObj = null;
+    public ParticleSystem m_flamePart = null;
     public float m_force = 1;
     public bool m_hasFuel = false;
     public float m_fuel = 45;
@@ -20,6 +21,11 @@ public class AlternateRocket : TestObject
         base.Awake();
     }
 
+    protected float Timer()
+    {
+        return Time.time - TestCreate.Instance.NavigatingStartTime;
+    }
+
     protected override void Update()
     {
         base.Update();
@@ -27,10 +33,21 @@ public class AlternateRocket : TestObject
         {
             m_flameObj.SetActive(Functionning || IsPlacing);
         }
-        if (m_flame != null)
+        //if (m_flame != null)
+        //{
+        //    m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1, 1, 1, 0.8f) : new Color(0, 0, 0, 0));
+        //    m_flameWrapper.transform.localScale = (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration) ? 1f * new Vector3(1, 1, 1) : Vector3.zero;
+        //}
+        if (m_flamePart != null)
         {
-            m_flame.color = (Functionning) ? Color.white : (IsPlacing ? new Color(1, 1, 1, 0.8f) : new Color(0, 0, 0, 0));
-            m_flameWrapper.transform.localScale = (Time.time % (boostDuration + betweenBoostDuration) <= boostDuration) ? 1f * new Vector3(1, 1, 1) : Vector3.zero;
+            if (Functionning && !m_flamePart.isPlaying && (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
+            {
+                m_flamePart.Play();
+            }
+            if (!Functionning && m_flamePart.isPlaying || !(Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
+            {
+                m_flamePart.Stop();
+            }
         }
 
         if (Functionning && m_hasFuel)
@@ -47,9 +64,9 @@ public class AlternateRocket : TestObject
 
     protected override void FixedUpdate()
     {
-        if (Functionning && (Time.time % (boostDuration + betweenBoostDuration) <= boostDuration))
+        if (Functionning && (Timer() % (boostDuration + betweenBoostDuration) <= boostDuration))
         {
-            RigidBody.AddRelativeForce(new Vector2(0, m_force * (Mathf.Sin(Time.time) + 1) / 2f));
+            RigidBody.AddRelativeForce(new Vector2(0, m_force));
         }
     }
 }
