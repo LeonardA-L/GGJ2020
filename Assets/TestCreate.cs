@@ -14,9 +14,19 @@ public class TestCreate : Singleton<TestCreate>
 
     public Transform m_moduleButtonsWrapper = null;
 
+    public CanvasGroup m_mainMenu = null;
+    public GameObject m_winScreen = null;
+    public GameObject m_gameOverScreen = null;
+    public GameObject m_tryAgain = null;
+    public GameObject m_nextLevel = null;
+
+    public LocalizedText m_gameOverReasonText = null;
+
+
     public GameObject m_tapePref = null;
 
     public Level m_currentLevel = null;
+    public List<Level> m_allLevels = null;
     public void SetLevel(Level newLevel)
     {
         m_currentLevel = newLevel;
@@ -129,6 +139,15 @@ public class TestCreate : Singleton<TestCreate>
         }
 
         m_currentRotSpeed = (Input.GetButton("Fire2") && m_instance != null) ? m_rotSpeed : 0;
+
+        if(m_base.transform.position.x < -4)
+        {
+            Lose("lose.tooLeft");
+        }
+        if (m_base.transform.position.y > 320)
+        {
+            Lose("lose.tooHigh");
+        }
     }
 
     internal void Select(TestObject testObject, bool uncollide)
@@ -273,5 +292,50 @@ public class TestCreate : Singleton<TestCreate>
         {
             m_allTapes.Remove(item);
         }
+    }
+
+    public void Lose(string reasonKey)
+    {
+        m_gameOverScreen.SetActive(true);
+        m_gameOverReasonText.SetText(reasonKey);
+        m_winScreen.SetActive(false);
+        m_mainMenu.gameObject.SetActive(false);
+    }
+
+    public void Win()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(true);
+        int idx = m_allLevels.IndexOf(m_currentLevel);
+        m_nextLevel.SetActive(idx < m_allLevels.Count - 1);
+        m_tryAgain.SetActive(idx >= m_allLevels.Count - 1);
+        m_mainMenu.gameObject.SetActive(false);
+    }
+
+    public void GotoMainMenu()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        m_mainMenu.gameObject.SetActive(true);
+        m_mainMenu.alpha = 1;
+        MainMenuController.Instance.IsInit = false;
+    }
+
+    public void TryAgain()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        ResetGame(true);
+    }
+
+    public void NextLevel()
+    {
+        m_gameOverScreen.SetActive(false);
+        m_winScreen.SetActive(false);
+        int idx = m_allLevels.IndexOf(m_currentLevel);
+        idx++;
+        idx = Mathf.Min(idx, m_allLevels.Count);
+        m_currentLevel = m_allLevels[idx];
+        ResetGame(true);
     }
 }

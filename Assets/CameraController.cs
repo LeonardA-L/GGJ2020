@@ -25,7 +25,8 @@ public class CameraController : Singleton<CameraController>
         {
             Vector3 lerped = Vector3.Lerp(m_cam.transform.position, TestCreate.Instance.m_base.transform.position - m_baseDiff, m_lerp);
             lerped.y = Mathf.Clamp(lerped.y, 0, 325f);
-            lerped.x = Mathf.Max(-4, lerped.x);
+            float limitLeft = -4;
+            lerped.x = Mathf.Max(limitLeft, lerped.x);
             lerped.z = m_baseZ;
             m_cam.transform.position = lerped;
         } else
