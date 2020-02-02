@@ -29,3 +29,4 @@ MonoBehaviour:
       type: 3}
     m_amount: 5
   m_distanceToWin: 50
+  m_forceUseAll: 0
