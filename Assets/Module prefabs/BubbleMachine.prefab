@@ -106,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_descriptionKey: parts.bubbleMachine
   m_name: BubbleMachine
-  m_button: {fileID: 6555856326184104904, guid: 46e83360dd762c74483d58cc30ab165f,
+  m_button: {fileID: 6555856326184104904, guid: 0a2fb52ab3ca93a4ba1d8d30ed940685,
     type: 3}
   m_hitPoint: {x: 0, y: 0, z: 0}
   m_activeColliders: []
