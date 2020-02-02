@@ -12,4 +12,13 @@
     "parts.umbrella":"<color=#113a82><b>Umbrella</b></color>\nblablabla\n\n<b><color=#591182>Command:</color> ON/OFF</b>",
     "parts.veryBigRocket":"<color=#113a82><b>Very Big Rocket</b></color>\nWell, that's a big rocket\n\n<b><color=#591182>Command:</color> ON only, last for 5 seconds</b>",
     "parts.weight":"<color=#113a82><b>Weight</b></color>\nIt's a simple weight. Don't expect much",
+
+    "tryAgain": "Try Again",
+    "mainMenu": "Main Menu",
+    "nextLevel": "Next Level",
+    "pressAny": "Press Any Key",
+
+    "lose.tooHigh":"You can't go to space in a makeshift ship!",
+    "lose.tooLeft":"Salvation is not this way! Trust us, we checked.",
+    "lose.crash":"Gather your parts and try again! Not enough duct tape perhaps?",
 }

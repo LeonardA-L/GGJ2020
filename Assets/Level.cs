@@ -21,6 +21,7 @@ public class Level : ScriptableObject
     private List<Entry> m_libraryContent = null;
     [SerializeField]
     private float m_distanceToWin = 50;
+    public float DistanceGoal => m_distanceToWin;
 
     public List<Entry> Library => m_libraryContent;
 }

@@ -39,6 +39,14 @@ public class TestObject : MonoBehaviour
     {
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.gameObject.tag == "Ground")
+        {
+            TestCreate.Instance.Lose("lose.crash");
+        }
+    }
+
     // Start is called before the first frame update
     protected virtual void Awake()
     {
