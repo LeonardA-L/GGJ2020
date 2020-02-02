@@ -41,6 +41,16 @@ public class ModuleButton : MonoBehaviour
         }
     }
 
+    public void Highlight()
+    {
+        m_module.SetHighlight(true);
+    }
+
+    public void Lowlight()
+    {
+        m_module.SetHighlight(false);
+    }
+
     public void OnHoverMagnet()
     {
         if (m_magnet != null && TestCreate.Instance.IsNavigating)
