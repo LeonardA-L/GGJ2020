@@ -75,6 +75,8 @@ MonoBehaviour:
   m_name: Hat
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
+  ModuleIcon: {fileID: 21300000, guid: ddd99c95609e9d8499ac48364ddd7b65, type: 3}
+  m_highlighter: {fileID: 0}
   m_activeColliders: []
 --- !u!61 &7323804469319170945
 BoxCollider2D:

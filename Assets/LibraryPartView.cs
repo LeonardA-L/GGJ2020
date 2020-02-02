@@ -13,6 +13,8 @@ public class LibraryPartView : MonoBehaviour
     public Button m_button = null;
     public TextMeshProUGUI m_amountText = null;
     private int m_amount = 0;
+    public Image ModuleIcon = null;
+
     public int Amount
     {
         get => m_amount;
@@ -44,15 +46,18 @@ public class LibraryPartView : MonoBehaviour
             m_amount = 0;
             m_button.interactable = false;
             m_amountText.gameObject.SetActive(false);
+            ModuleIcon.gameObject.SetActive(false);
             return;
         }
 
         m_amountText.gameObject.SetActive(true);
+        ModuleIcon.gameObject.SetActive(true);
         m_button.interactable = true;
 
         m_part = part.ItemPrefab;
         m_amount = part.Amount;
         m_amountText.text = $"{m_amount}";
+        ModuleIcon.sprite = m_part.ModuleIcon;
 
         trigger = m_button.gameObject.AddComponent<EventTrigger>();
 

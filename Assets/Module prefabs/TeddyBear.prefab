@@ -82,6 +82,8 @@ MonoBehaviour:
   m_name: TeddyBear
   m_button: {fileID: 0}
   m_hitPoint: {x: 0, y: 0, z: 0}
+  ModuleIcon: {fileID: 21300000, guid: 8c6e3af08452fdd4b9bcc6dc40b941cb, type: 3}
+  m_highlighter: {fileID: 0}
   m_activeColliders: []
 --- !u!58 &3273470964078910835
 CircleCollider2D:

@@ -173,6 +173,7 @@ MonoBehaviour:
   m_button: {fileID: 6555856326184104904, guid: d4f6b3633d3c59140bd571e9845f936d,
     type: 3}
   m_hitPoint: {x: 0, y: 0, z: 0}
+  ModuleIcon: {fileID: 21300000, guid: 38c586268849deb458c82e92193bf649, type: 3}
   m_highlighter: {fileID: 794682919444320168}
   m_activeColliders: []
   _blueCollider1: {fileID: 5503174619294207424}
@@ -189,6 +190,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2812937711782255223, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7688aa3b24d66d4f81dafae04ce6373, type: 2}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 2793321462122437556}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_collider
+      value: 
+      objectReference: {fileID: 7526008321076768253}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -259,21 +275,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.6693268
       objectReference: {fileID: 0}
-    - target: {fileID: 2812937711782255223, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a7688aa3b24d66d4f81dafae04ce6373, type: 2}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 2793321462122437556}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_collider
-      value: 
-      objectReference: {fileID: 7526008321076768253}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &8992782596518644185 stripped
@@ -307,11 +308,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5268047461862152706}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 4d12319acf76d9d4b92920fc89450e55,
-        type: 3}
-      propertyPath: m_Name
-      value: Magnet
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d12319acf76d9d4b92920fc89450e55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -382,6 +378,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 27.404839
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 4d12319acf76d9d4b92920fc89450e55,
+        type: 3}
+      propertyPath: m_Name
+      value: Magnet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d12319acf76d9d4b92920fc89450e55, type: 3}
 --- !u!4 &7335161288752757636 stripped
@@ -402,6 +403,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 2793321462122437556}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -472,11 +478,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 2793321462122437556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &4641609385718403040 stripped
@@ -492,11 +493,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5268047461862152706}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 4d12319acf76d9d4b92920fc89450e55,
-        type: 3}
-      propertyPath: m_Name
-      value: Magnet (1)
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4d12319acf76d9d4b92920fc89450e55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,6 +568,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d82f627e107932244aa0078170fea4c1, type: 2}
+    - target: {fileID: -927199367670048503, guid: 4d12319acf76d9d4b92920fc89450e55,
+        type: 3}
+      propertyPath: m_Name
+      value: Magnet (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d12319acf76d9d4b92920fc89450e55, type: 3}
 --- !u!4 &2693372702706125159 stripped
@@ -598,6 +599,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Collider (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2812937711782255223, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7688aa3b24d66d4f81dafae04ce6373, type: 2}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_parent
+      value: 
+      objectReference: {fileID: 2793321462122437556}
+    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
+        type: 3}
+      propertyPath: m_collider
+      value: 
+      objectReference: {fileID: 122697337214120295}
     - target: {fileID: 7794764459057026402, guid: a56f63b5fc292874f94e32eca5017d54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -668,21 +684,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.90826374
       objectReference: {fileID: 0}
-    - target: {fileID: 2812937711782255223, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a7688aa3b24d66d4f81dafae04ce6373, type: 2}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_parent
-      value: 
-      objectReference: {fileID: 2793321462122437556}
-    - target: {fileID: 6683180161662849403, guid: a56f63b5fc292874f94e32eca5017d54,
-        type: 3}
-      propertyPath: m_collider
-      value: 
-      objectReference: {fileID: 122697337214120295}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56f63b5fc292874f94e32eca5017d54, type: 3}
 --- !u!4 &1517396425177929027 stripped

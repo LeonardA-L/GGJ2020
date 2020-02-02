@@ -17,6 +17,7 @@ public class TestObject : MonoBehaviour
     public Vector3 m_hitPoint;
     public int ID { get; set; } = 0;
     public ModuleButton Button { get; set; } = null;
+    public Sprite ModuleIcon = null;
 
     public Renderer m_highlighter = null;
 
